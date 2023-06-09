@@ -1,18 +1,10 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Related</title>
-
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto my-2 my-lg-0">
-           
-            
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            
-        </ul>
-    </div>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         * {
@@ -29,11 +21,10 @@
         }
 
         body {
-            background-image: url(technology.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.4)), url(maui.JPEG);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 500vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -53,6 +44,8 @@
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 15px;
+            background-color: gray;
+            border-radius: 4px;
         }
 
         li {
@@ -60,14 +53,16 @@
         }
 
         a {
-            color: black;
+            color: yellow;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
     <h1>Related Links</h1>
+    
     <ul>
+        <a href="relate.html"><i class="fa fa-home" title="Home" style="font-size: 36px"></i></a>
         <li><a href="#A">A</a></li>
         <li><a href="#B">B</a></li>
         <li><a href="#C">C</a></li>
@@ -94,6 +89,7 @@
         <li><a href="#X">X</a></li>
         <li><a href="#Y">Y</a></li>
         <li><a href="#Z">Z</a></li>
+        <a href="#down"><i id="up" class="fa fa-arrow-circle-down" style="font-size: 36px" title="View bottom"></i></a>
     </ul>
 
 
@@ -376,8 +372,9 @@
                 <dt>Z</dt>
     
             </div> 
-            <ul>
 
+            <ul>
+                <a href="relate.html"><i class="fa fa-home" title="Home" style="font-size: 36px"></i></a>
                 <li><a href="#A" >A</a></li>
                 <li><a href="#B" >B</a></li>
                 <li><a href="#C" >C</a></li> 
@@ -404,9 +401,7 @@
                 <li><a href="#X" >X</a></li> 
                 <li><a href="#Y" >Y</a></li>
                 <li><a href="#Z" >Z</a></li>
-            
-                   
-            
+                <a href="#"><i id="down" class="fa fa-arrow-circle-up" style="font-size: 36px" title="View Top"></i></a>
             </ul>
 
 </body>
