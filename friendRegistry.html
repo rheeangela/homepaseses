@@ -3,17 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Friend Registry</title>
-
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto my-2 my-lg-0">
-           
-            
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            
-        </ul>
-    </div>
-
     <style>
         body {
             background-color: #F5F5F5;
@@ -45,7 +34,7 @@
             border: none;
             box-shadow: 0px 0px 5px #888888;
         }
-        input[type="submit"] {
+        button {
             background-color: #2F4F4F;
             color: #FFFFFF;
             padding: 10px 20px;
@@ -55,10 +44,33 @@
             margin-top: 20px;
             transition: background-color 0.3s ease;
         }
-        input[type="submit"]:hover {
+        button:hover {
             background-color: #696969;
         }
+
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+            display: none;
+        }
     </style>
+
+    <script>
+        function returnToForm() {
+        document.getElementById('message').style.display = 'block';
+
+        setTimeout(function() {
+            document.getElementById('message').style.display = 'none';
+
+            window.location.href = "friendRegistry.html";
+        }, 3000);
+
+        return false;
+    }
+    </script>
+
 </head>
 <body>
     <h1>Friend Registry</h1>
@@ -80,9 +92,10 @@
             <option value="other">Other</option>
         </select>
 
-        <input type="submit" value="Save">
+        <button type="submit" onclick="returnToForm()">Save</button>
     </form>
+    <div id="message" class="message">
+        <p>SUCCESS!</p>
+    </div>
 </body>
 </html>
-
-
